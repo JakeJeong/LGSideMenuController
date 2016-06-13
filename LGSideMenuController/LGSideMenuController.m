@@ -1330,6 +1330,7 @@
 
     // -----
 
+    [self rootViewLayoutInvalidateWithPercentage:0.f];
     [self leftViewLayoutInvalidateWithPercentage:0.f];
     [self colorsInvalidate];
     [self hiddensInvalidate];
@@ -1352,9 +1353,6 @@
 {
     if (animated)
     {
-        [self rootViewLayoutInvalidateWithPercentage:0.f];
-        [self leftViewLayoutInvalidateWithPercentage:0.f];
-        
         [LGSideMenuController animateStandardWithDuration:_leftViewAnimationSpeed
                                                animations:^(void)
          {
@@ -1501,6 +1499,7 @@
 
     // -----
 
+    [self rootViewLayoutInvalidateWithPercentage:0.f];
     [self rightViewLayoutInvalidateWithPercentage:0.f];
     [self colorsInvalidate];
     [self hiddensInvalidate];
@@ -1523,9 +1522,6 @@
 {
     if (animated)
     {
-        [self rootViewLayoutInvalidateWithPercentage:0.f];
-        [self rightViewLayoutInvalidateWithPercentage:0.f];
-        
         [LGSideMenuController animateStandardWithDuration:_rightViewAnimationSpeed
                                                animations:^(void)
          {
