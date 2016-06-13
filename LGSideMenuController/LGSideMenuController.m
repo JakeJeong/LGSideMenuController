@@ -1352,6 +1352,9 @@
 {
     if (animated)
     {
+        [self rootViewLayoutInvalidateWithPercentage:0.f];
+        [self leftViewLayoutInvalidateWithPercentage:0.f];
+        
         [LGSideMenuController animateStandardWithDuration:_leftViewAnimationSpeed
                                                animations:^(void)
          {
@@ -1520,6 +1523,9 @@
 {
     if (animated)
     {
+        [self rootViewLayoutInvalidateWithPercentage:0.f];
+        [self rightViewLayoutInvalidateWithPercentage:0.f];
+        
         [LGSideMenuController animateStandardWithDuration:_rightViewAnimationSpeed
                                                animations:^(void)
          {
